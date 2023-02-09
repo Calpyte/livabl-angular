@@ -1,0 +1,31 @@
+.logo-img{
+  width: 200px;
+  height: auto;
+}
+.logo-btn{
+  border-radius: 50px;
+  width: 45px;
+  padding: 10px;
+  border:solid 2px hotpink;
+  background-color: pink;
+}
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 20px;
+   border-radius: 20px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  //  background-color: red;
+}
+.outer-container{
+  padding: 20px 200px;
+  // background-color: yellow;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: blue;
+}

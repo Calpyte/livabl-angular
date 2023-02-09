@@ -1,0 +1,5 @@
+<div class="menu">
+  <div *ngFor="let menu of menus">
+    <button style="padding: 2%;width: 40%;"  class="btn btn-success" (click)="selectedMenu(menu?.key)">{{menu?.value}}</button><br><br>
+  </div>
+</div>

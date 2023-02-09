@@ -1,0 +1,15 @@
+<div class="outer-container">
+  <div class="header">
+    <img class="logo-img" src="http://localhost:3000/whatsapp-image-20221222-at-923-3@2x.png">
+     <a (click)="selectedLink('client/measure')" >Measures</a>
+     <a (click)="selectedLink('client/measure')"> Reduce</a>
+     <a (click)="selectedLink('client/measure')"> Offset</a>
+     <a (click)="selectedLink('client/dashboard')" >Dashboard</a>
+    <button class="logo-btn" [matMenuTriggerFor]="menu">S</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Profile</button>
+      <button mat-menu-item>Logout</button>
+      <button mat-menu-item>Notification</button>
+    </mat-menu>
+  </div>
+</div>
