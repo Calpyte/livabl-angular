@@ -5,7 +5,7 @@
     <button class="logo-btn" [matMenuTriggerFor]="profile">{{user}}</button>
     <mat-menu #profile="matMenu">
       <button mat-menu-item>Profile</button>
-      <button mat-menu-item>Logout</button>
+      <button mat-menu-item (click)="logout()">Logout</button>
       <button mat-menu-item>Notification</button>
     </mat-menu>
   </div>

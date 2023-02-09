@@ -29,22 +29,22 @@ export class HeaderComponent implements OnInit {
       link:"client/dashboard"
     }
   ]
-  user_menus:any = [
+  admin_menus:any = [
     {
-      name:"Mea",
-      link:"client/measure"
+      name:"Client",
+      link:"admin/client"
     },
     {
-      name:"Reducdfge",
-      link:"client/measure"
+      name:"Client Control",
+      link:"admin/control"
     },
     {
-      name:"dfg",
-      link:"client/measure"
+      name:"Add SuperAdmin",
+      link:"admin/add"
     },
     {
-      name:"dfg",
-      link:"client/dashboard"
+      name:"Client Details",
+      link:"admin/details"
     }
   ]
   constructor(private router:Router) { }
@@ -53,11 +53,16 @@ export class HeaderComponent implements OnInit {
     if(!this.user) this.user = "PR"
     switch(this.menu){
       case "client" : this.menus = this.client_menus; break;
-      case "user" :this.menus = this.user_menus;break;
+      case "user" :this.menus = this.admin_menus;break;
+      case "admin" :this.menus = this.admin_menus;break;
     }
   }
   selectedLink=(link:any)=>{
     this.router.navigate([link]);
+  }
+
+  logout=()=>{
+    this.router.navigate(["home"]);
   }
 
 }
