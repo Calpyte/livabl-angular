@@ -20,6 +20,8 @@ export class LoginComponent implements OnInit {
   login=()=>{
     if(this.selectedMenu == 1){
       this.router.navigate(['client']);
+    }else{
+      this.router.navigate(['home']);
     }
   }
 
